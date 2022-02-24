@@ -1,51 +1,21 @@
 package com.projectstage.project.Entities;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
+@AllArgsConstructor
 public class User {
 
+    @Getter @Setter
     private String id;
+    @Getter @Setter
     private String name;
+    @Getter @Setter
     private String surname;
+    @Getter @Setter
     private String email;
 
-    public String getId() {
-        return this.id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return this.name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getSurname() {
-        return this.surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public String getEmail() {
-        return this.email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public User(String id, String name, String surname, String email) {
-        this.id = id;
-        this.name = name;
-        this.surname = surname;
-        this.email = email;
-    }
 
     
 
