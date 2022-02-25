@@ -69,7 +69,7 @@ class DemoApplicationTests extends AbstractTest {
       MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.delete(uri)).andReturn();
       int status = mvcResult.getResponse().getStatus();
       assertEquals(200, status);
-      
+   
    }
 
 
