@@ -1,20 +1,17 @@
 package com.projectstage.project.Entities;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
-@AllArgsConstructor @NoArgsConstructor
+
+@AllArgsConstructor @NoArgsConstructor @Data
 public class User {
 
-	@Getter @Setter
+
     private String id;
-    @Getter @Setter
     private String name;
-    @Getter @Setter
     private String surname;
-    @Getter @Setter
     private String email;
 
 

@@ -53,6 +53,7 @@ class DemoApplicationTests extends AbstractTest {
    public void updateUser() throws Exception {
       String uri = "/user/2";
       User user = new User();
+      user.setId("2");
       user.setName("Giovanni");
       String inputJson = super.mapToJson(user);
       MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.put(uri)
